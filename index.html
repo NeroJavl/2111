@@ -860,7 +860,7 @@
     <div class="university-section">
         <img src="https://i.ibb.co/Hh8F6cY/images-1.jpg" class="upn-logo" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
         <h3>UCSUR</h3>
-        <p class="payment-status">✓ Pago Cancelado</p>
+        <p class="payment-status">✓ Pago Pendiente</p>
         <p>Monto: S/. 100.00</p>
         <button onclick="generatePDF()">
             Generar Boleta PDF
@@ -930,7 +930,7 @@
                     </circle>
                 </svg>
             </div>
-            <div>Parasitologia</div>
+            <div>Parasitologia - Microbiologia e Inmunologia</div>
         </div>
     </div>
 
@@ -938,7 +938,7 @@
         <h3>Subiendo Modificación al Sistema</h3>
         <div class="progress-bar-container">
             <div class="progress-bar" id="progressBar">
-                <div class="progress-text">20%</div>
+                <div class="progress-text">00%</div>
             </div>
         </div>
     </div>
@@ -959,7 +959,7 @@
                     <td>16/12/2024</td>
                     <td>100115271@cientifica.edu.pe</td>
                     <td>S/. 100.00</td>
-                    <td>Pagado</td>
+                    <td>Pendiente</td>
                 </tr>
             </tbody>
         </table>
@@ -1146,7 +1146,7 @@ function generatePDF() {
     doc.text("Alumno: Mia Consuelo Jacqueline Alvarez Alvarez", 20, 90);
     doc.text("Código: 100115271", 20, 100);
     doc.text("Universidad: UCSUR", 20, 110);
-    doc.text("Carrera: Anonima", 20, 120);
+    doc.text("Carrera: Anonimo", 20, 120);
     
     doc.line(20, 125, 190, 125);
     
@@ -1163,7 +1163,7 @@ function generatePDF() {
     doc.text("Fecha de emisión: " + currentDate, 20, 150);
     doc.text("Concepto: Servicio de modificación de registro académico", 20, 160);
     doc.text("Monto: S/. 100.00", 20, 170);
-    doc.text("Estado: PAGADO", 20, 180);
+    doc.text("Estado: Pendiente", 20, 180);
     
     doc.line(20, 185, 190, 185);
     
